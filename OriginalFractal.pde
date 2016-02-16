@@ -9,7 +9,7 @@ public void draw()
 }
 public void myFractal(float x, float y, float siz,float theta)
 {
-	if(siz<70)
+	if(siz<35)
 	{
 		for(int i=0;i<1900;i++)
 		{
