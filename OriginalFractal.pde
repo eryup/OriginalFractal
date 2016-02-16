@@ -9,7 +9,7 @@ public void draw()
 }
 public void myFractal(float x, float y, float siz,float theta)
 {
-	if(siz<100)
+	if(siz<70)
 	{
 		for(int i=0;i<1900;i++)
 		{
@@ -17,7 +17,7 @@ public void myFractal(float x, float y, float siz,float theta)
 				fill((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
 		}
 		rect(x, y, siz, siz);
-		myFractal((float)(x+(3*siz)*Math.cos(theta)),(float)(y+(3*siz)*Math.sin(theta)),siz+.05,theta+1);
+		myFractal((float)(x+(4*siz)*Math.cos(theta)),(float)(y+(4*siz)*Math.sin(theta)),siz+.05,theta+1);
 	}
 	else
 	{
